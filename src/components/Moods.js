@@ -36,7 +36,7 @@ const sadMood = 'Rather sad';
 
 export default function Moods() {
   /* STEP 1 */
-const [mood, setMood] = useState('happyMood')
+const [mood, setMood] = useState(happyMood)
   const makeHappy = () => {
    setMood(happyMood)
     /* STEP 4 */
@@ -53,7 +53,7 @@ const [mood, setMood] = useState('happyMood')
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: mood === sadMood ? 'crimson' : 'royalblue', /* STEP 2 */
+    color: mood ===happyMood? 'royalblue' : 'crimson', /* STEP 2 */
   };
 
   return (
